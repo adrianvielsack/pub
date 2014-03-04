@@ -43,14 +43,12 @@ int main(void){
 	SPDR = 0;
 	int i, n;
 	//Display something
-	for (i = 0; i < 512; i++)
-		buffer[i] = 0;
 	for (i = 0; i < 16; i++)
 		buffer[i + 32 * 15] = (1<<(i % 8));
 	//Mainloop for drawing	
 	while (1) {
 		for (i = 0; i < 16; i++) {
-			//LATCH_LOW If we want the display to be dimmed
+			//ENABLE_LOW If we want the display to be dimmed
 			if (dim == 1)
 				ENABLE_LOW
 			//Push out next row
