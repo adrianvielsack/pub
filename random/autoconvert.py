@@ -9,11 +9,11 @@ USER=""
 PASSWD=""
 WORDPRESS_URL=""
 URL="https://" + WORDPRESS_URL + "/xmlrpc.php"
-MESHLAB_SERVER = "C:\\Users\\kinect\\Downloads\\meshlabserver.exe"
-MESHLAB_SCRIPT = "C:\\Users\\kinect\\Dropbox\\ZKM\\Scans\\art2014\\filter-web.mlx"
+MESHLAB_SERVER = ""
+MESHLAB_SCRIPT = ""
 NEW_SUFFIX="-conv"
 client = Client(URL, USER, PASSWD)
-FOLDER = "C:\\Users\\kinect\\Dropbox\\ZKM\\Scans\\art2014\\art2014\\12032014"
+FOLDER = ""
 print "Monitoring:", FOLDER
 
 balloon.balloon_tip("Watching...", FOLDER)
